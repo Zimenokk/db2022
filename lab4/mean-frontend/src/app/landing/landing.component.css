@@ -1,0 +1,24 @@
+.container{
+    display:flex;    
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.container h3{
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.item{
+    width: 30%;
+}
+
+.item img{
+    height: 220px;
+    width: 100%;
+}

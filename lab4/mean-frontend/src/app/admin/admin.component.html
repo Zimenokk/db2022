@@ -1,0 +1,48 @@
+<a
+  style="display: block"
+  class="navbar-brand"
+  routerLink="/"
+  routerLinkActive="active"
+>
+  Назад
+</a>
+
+<img src="https://risshunter.com/image/cache/catalog/ACR/ce49f4_b3104ec8b7cf492fa692b44409e6bbfe_mv2-550x550w.jpg" />
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+  <div class="contact_form-container">
+    <div>
+      <div>
+        <input type="text" placeholder="Name" formControlName="name" required />
+      </div>
+      <div>
+        <input
+          type="text"
+          class="message_input"
+          formControlName="description"
+          placeholder="Description"
+          required
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          placeholder="Image url"
+          formControlName="image"
+          required
+        />
+      </div>
+      <div>
+        <input
+          formControlName="range"
+          type="number"
+          placeholder="Range"
+          required
+        />
+      </div>
+      <div>
+        <button type="submit">Add</button>
+      </div>
+    </div>
+  </div>
+</form>

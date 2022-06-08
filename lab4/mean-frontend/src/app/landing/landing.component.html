@@ -1,0 +1,25 @@
+<div class="container">
+  <h3 style="display: block">
+    <a
+      class="navbar-brand"
+      routerLink="/admin"
+      routerLinkActive="active"
+    >
+      Add Gun
+    </a>
+  </h3>
+
+  <div class="box">
+    <div *ngFor="let item of weapons" class="item">
+      <img src="{{ item.image }}" alt="" />
+      <div class="link_box">
+        <h5 style="text-align: center;">{{ item.name }}</h5>
+        <p style="text-align: center">
+          {{ item.description }}
+        </p>
+        <p style="text-align: center">Range: {{ item.range }}</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
