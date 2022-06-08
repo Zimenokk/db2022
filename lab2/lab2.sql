@@ -122,19 +122,19 @@ Latest commit 17090a6 on 12 May
 
 --select * from weapons where weapon_region = 'Asia/Jakarta' and (weapon_name = 'Nigma Galaxy' or weapon_name = 'PSG.LGS');
 
---Вибрати найбільший розмір призових з таблиці "weapon_mates"  39
+--Вибрати найбільший розмір дальності з таблиці "weapon_mates"  39
 --Select max(general_price) from weapon_mates;
 
---Вибрати найменший розмір призових з таблиці "weapon_mates"  40
+--Вибрати найменший розмір дальності з таблиці "weapon_mates"  40
 --Select min(general_price) from weapon_mates;
 
---Вибрати найбільший розмір призових з таблиці "weapon_mates"  41
+--Вибрати найбільший розмір дальності з таблиці "weapon_mates"  41
 --Select sum(general_price) from weapon_mates;
 
---Вибрати найбільший розмір призових з таблиці "weapon_mates"  42
+--Вибрати найбільший розмір дальності з таблиці "weapon_mates"  42
 --Select count(general_price) from weapon_mates;
 
---Вибрати найбільший розмір призових з таблиці "weapon_mates"  43
+--Вибрати найбільший розмір дальності з таблиці "weapon_mates"  43
 --Select avg(general_price) from weapon_mates;
 
 --Select user_name, enemy_shooting from weapon_mates where enemy_shooting<10;
@@ -181,7 +181,7 @@ Latest commit 17090a6 on 12 May
   --GROUP BY user_name
   --HAVING avg(total_kills)>100000;
 
---Відсортувати гравці за рангами у порядку спадання  49
+--Відсортувати зброю за дальністю у порядку спадання  49
 --SELECT user_name, enemy_shooting FROM weapon_mates ORDER BY enemy_shooting;
 
 --SELECT user_name, enemy_shooting FROM weapon_mates ORDER BY enemy_shooting DESC;
